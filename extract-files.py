@@ -22,6 +22,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/infinix/X6880',
     'hardware/mediatek',
+    'hardware/mediatek/libaedv',
     'hardware/mediatek/libmtkperf_client',
 ]
 
