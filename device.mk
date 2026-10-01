@@ -461,9 +461,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget-service.mediatek \
     init.mt6789.usb.rc
 
-# ViPER4Android
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Vendor Logtag
 $(call inherit-product, hardware/mediatek/configs/properties/vendor_logtag.mk)
 
