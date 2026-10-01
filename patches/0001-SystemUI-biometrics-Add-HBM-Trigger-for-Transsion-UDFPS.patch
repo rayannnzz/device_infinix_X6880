@@ -3,6 +3,15 @@ From: fjrXTR <fajarslebew31@gmail.com>
 Date: Sat, 10 Jan 2026 08:11:08 +0000
 Subject: [PATCH] SystemUI: biometrics: Add HBM Trigger for Transsion UDFPS
 
+* it's very unfortunate that Transsion is not open-source at all on the kernel side. To fix this In-display Fingerprint (On-display Fingerprint), we have to use a forceful method, which is by triggering the HBM (High Brightness Mode) in the UdfpsController. so that it can run with the native HAL Service
+
+* Thx to rianixia for help me to fix this
+
+* Thx for fjrXTR for commit!
+
+Change-Id: I61e510ac4dbb98c03093146366fc09269ad09996
+Signed-off-by: fjrXTR <fajarslebew31@gmail.com>
+Signed-off-by: KimelaZX <mmikailrei@gmail.com>
 ---
  .../systemui/biometrics/UdfpsController.java  | 106 +++++++++++++++++-
  1 file changed, 105 insertions(+), 1 deletion(-)
