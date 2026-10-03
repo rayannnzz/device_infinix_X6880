@@ -22,8 +22,9 @@ from extract_utils.main import (
 namespace_imports = [
     'device/infinix/X6880',
     'hardware/mediatek',
-    'hardware/mediatek/libaedv',
     'hardware/mediatek/libmtkperf_client',
+    'hardware/mediatek/libaedv',
+    'hardware/mediatek/libion_mtk',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
