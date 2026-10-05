@@ -18,7 +18,6 @@ genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:2/block
 genfscon sysfs /kernel/tran_display/lcm_name                                                                            u:object_r:sysfs_lcm_name_file:s0
 
 # Extcon
-genfscon sysfs /devices/platform/extcon_usb                                                        u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/extcon_usb1                                                       u:object_r:sysfs_extcon:s0
 
 # Fingerprint
@@ -32,9 +31,6 @@ genfscon proc /gesture_state                                                    
 genfscon sysfs /devices/platform/soc/13000000.mali u:object_r:sysfs_gpu:s0
 
 # Power
-genfscon sysfs /devices/platform/13000000.mali/js_ctx_scheduling_mode                   u:object_r:sysfs_gpu:s0
-genfscon sysfs /devices/platform/13000000.mali/js_scheduling_period                   u:object_r:sysfs_gpu:s0
-genfscon sysfs /devices/platform/13000000.mali/dvfs_period                   u:object_r:sysfs_gpu:s0
 
 # Label wakeup nodes
 genfscon sysfs /devices/platform/mtk_ctd/power_supply/mtk_charger_type/wakeup u:object_r:sysfs_wakeup:s0
