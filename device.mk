@@ -511,5 +511,16 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl:64 \
     libkeystore-engine-wifi-hidl:64
 
+<<<<<<< HEAD
+=======
+PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.config@1.0.vendor:64 \
+    android.hardware.tetheroffload.control@1.0.vendor:64 \
+    android.hardware.tetheroffload.control@1.1.vendor:64
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
+>>>>>>> 6206663 (X6880: Import wpa supplicant into device tree)
 # Inherit the proprietary files
 $(call inherit-product, vendor/infinix/X6880/X6880-vendor.mk)
