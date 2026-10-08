@@ -54,3 +54,5 @@ vendor.tms. u:object_r:vendor_nfc_prop:s0
 
 # TEE property
 vendor.tee.googlekey.status                          u:object_r:vendor_mtk_trustonic_tee_prop:s0
+vendor.audio.dolby.  u:object_r:vendor_audio_prop:s0
+persist.vendor.tran_nfc_chip_manufacturer    u:object_r:vendor_nfc_prop:s0
