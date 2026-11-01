@@ -27,3 +27,16 @@ PRODUCT_SYSTEM_DEVICE := X6880
 
 BUILD_FINGERPRINT := Infinix/X6880-OP/Infinix-X6880:15/AP3A.240905.015.A2/145011:user/release-keys
 
+# Axion device properties
+AXION_MAINTAINER := ーケrayannn.
+AXION_PROCESSOR := MediaTek_Helio_G100
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+
+# Bypass
+BYPASS_CHARGE_SUPPORTED := true
+BYPASS_CHARGE_TOGGLE_PATH ?= /sys/devices/platform/charger/bypass_charger
+
+# Camera Specs
+AXION_CAMERA_REAR_INFO := 50
+AXION_CAMERA_FRONT_INFO := 13
